@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter:</h1>
+        <select name="Units" id="conversionType" onchange="updateInputFields()">
+            <option value="">Select the option</option>
+            <option value="cel-fer">Celsius to Fahrenheit</option>
+            <option value="cel-kel">Celsius to Kelvin</option>
+            <option value="fer-kel">Fahrenheit to Kelvin</option>
+        </select>
+        <br><br>
+        <label for="input1"></label>
+        <input type="text" id="input1" placeholder="Value 1">
+        <br><br>
+        <label for="input2"></label>
+        <input type="text" id="input2" placeholder="Value 2">
+        <br><br>
+        <div class="center">
+            <button onclick="convertTemperature()">Convert</button>
+            <button onclick="clearInputs()">Clear All</button>
+        </div>
+        <br>
+        <footer style="text-align: center;"><label for="shivam Pandey">@Copywrite Shivam Pandey</label></footer>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
